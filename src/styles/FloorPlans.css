@@ -1,0 +1,367 @@
+@media (min-width: 701px) {
+  .fp-heading {
+    font-family: 'Cormorant', serif !important;
+    color: #08232A;
+    font-size: 36px;
+  }
+
+  .floorplans-section {
+    background: linear-gradient(rgb(205, 156, 64) 70%, rgb(21, 138, 68) 30%);
+    position: relative;
+    padding: 4rem 1rem;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .decor-img {
+    display: none !important;
+  }
+
+  .floorplans-section::before,
+  .floorplans-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .floorplans-section::before {
+    left: 0;
+    background-image: url('https://urbanranch.irarealty.in/_next/static/media/Vector.faabbda7.webp');
+  }
+
+  .floorplans-section::after {
+    right: 0;
+    background-image: url('https://urbanranch.irarealty.in/_next/static/media/Vector.faabbda7.webp');
+  }
+
+  .fp-download {
+    height: 44px;
+    width: 230px !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: white;
+    color: orange;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .fp-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 1200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    pointer-events: none;
+    padding: 0 1rem !important;
+  }
+
+
+
+  .fp-arrow {
+    pointer-events: auto;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 11;
+    transition: background-color 0.2s ease;
+  }
+
+
+  .fp-arrow svg {
+    color: #ffffff;
+    width: 24px;
+    height: 24px;
+  }
+
+  .fp-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1.5rem;
+    max-width: 100%;
+    overflow-x: visible;
+    margin: 0 auto;
+  }
+
+  .fp-card {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    max-width: 420px;
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .fp-img {
+    width: 75%;
+    height: auto;
+    max-height: 520px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    margin-right: 0;
+  }
+
+  .fp-card:last-child .fp-img {
+    margin-right: 0;
+  }
+
+  .fp-info {
+    position: absolute;
+    top: 0;
+    transform: none;
+    left: -28%;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .fp-card:nth-child(even) .fp-info {
+    left: auto;
+    right: -25%;
+    text-align: right;
+    align-items: flex-start;
+  }
+
+  .villatype {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .villaname,
+  .floorname,
+  .builtuparea {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.2rem 0;
+  }
+
+  .builtuparea span {
+    font-weight: 300;
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  .floorplans-section {
+    position: relative;
+    background: linear-gradient(rgb(205, 156, 64) 60%, rgb(21, 138, 68) 40%);
+    padding: 4rem 0;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .villatype {
+    font-family: 'Poppins', sans-serif !important;
+  }
+
+  .villaname {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 60%;
+    padding-top: 10%;
+  }
+
+  .builtuparea {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: bolder;
+    font-size: 70%;
+    text-transform: capitalize;
+  }
+
+
+  .floorname {
+    padding-top: 7%;
+    font-family: 'Poppins', sans-serif !important;
+  }
+
+  .decor-img {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 78px;
+    height: 98px;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+  }
+
+  .floorplans-header {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .fp-heading {
+    font-family: 'Cormorant', serif !important;
+    /* font-size: 3rem; */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #08232A;
+  }
+
+  .fp-subheading {
+    font-size: 1rem;
+    margin: 0;
+    word-spacing: 1px;
+    font-family: 'Nunito Sans', sans-serif !important;
+  }
+
+  .fp-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+  }
+
+  .fp-arrow {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .fp-arrow svg {
+    color: #fff;
+  }
+
+  .fp-slider {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    transition: transform 0.4s ease-in-out;
+    gap: 2rem;
+  }
+
+  .fp-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .fp-card {
+    background-color: transparent;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .fp-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .fp-info {
+    text-align: left;
+    padding-left: 1rem;
+    color: white;
+  }
+
+  .villatype {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+
+  .villaname {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .floorname,
+  .builtuparea {
+    margin: 0.2rem 0;
+    font-weight: normal;
+  }
+
+  .builtuparea span {
+    font-weight: 200;
+  }
+
+  .fp-download {
+    width: 220px;
+    height: 45px;
+    padding: 1px 95px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    color: #CD9C40;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin-top: 30px;
+    line-height: 1;
+  }
+}
+
+
+@media (min-width:1200px) {
+  .fp-heading {
+    font-size: 2.5rem !important;
+    color: #f0f7f8;
+  }
+
+  .fp-heading {
+    height: 20% !important;
+    line-height: none !important;
+  }
+}
+
+@media(min-width:1400px) {
+  .fp-heading {
+    font-size: 48px;
+    font-family: 'Cormorant', serif !important;
+    color: #08232A;
+  }
+}

@@ -1,0 +1,168 @@
+.urban-ranch-section {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("https://urbanranch.irarealty.in/_next/static/media/mask1.8182b92f.webp");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  background-color: white;
+}
+
+.ranch-content-wrapper {
+  margin: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #f7c04a;
+
+}
+
+.section-heading {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: #08232A;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 540 !important;
+  padding-left: 0;
+  margin-left: 0;
+  font-family: 'Cormorant serif';
+}
+
+.section-description {
+  font-size: 24px;
+  line-height: 1.7;
+  text-align: left;
+  word-spacing: 0.5px;
+  color: #73788c;
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ranch-image {
+  width: 100%;
+  max-width: 1233px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.Title {
+  padding: 10px;
+  color: #CD9C40;
+  font-size: 0.5rem;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: left;
+  margin-left: 1.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #F8F9FE;
+  width: 250px;
+  font-weight: lighter;
+}
+
+.title-container {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+
+
+@media (max-width: 576px) {
+  .section-description {
+    font-size: 0.95rem;
+    font-size: 8px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .section-heading {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+
+  .Title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 140.5px;
+    font-size: 9px;
+  }
+
+
+  .ranch-image {
+    height: 28vh;
+    max-width: 170vw;
+  }
+}
+
+
+/* 16 */
+@media (max-width: 576px) {
+  .ranch-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* aligns all child elements to the left */
+  }
+
+  .title-container,
+  .section-heading,
+  .section-description {
+    width: 100%;
+    /* full width ensures alignment */
+    margin: 0;
+    /* reset margins */
+    padding: 0;
+    /* optional: remove any padding */
+    text-align: left;
+    /* ensure text is left-aligned */
+  }
+
+  .Title {
+    font-size: 9px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .section-heading {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .section-description {
+    margin-bottom: 10px;
+    font-size: 8px;
+    line-height: 1.5;
+  }
+}

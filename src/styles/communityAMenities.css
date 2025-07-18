@@ -1,0 +1,137 @@
+:root {
+  --amenitiesbg: #06282f;
+  --gold: #f7c04a;
+  --blue: #7ec0d6;
+}
+
+.amenities-section {
+  background-color: var(--amenitiesbg);
+  color: white;
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.amenities-content {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-wrap: no-wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-section {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  text-align: left;
+  min-width: 300px;
+}
+
+.section-label {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 20px;
+  width: fit-content;
+  min-width: 120px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.section-heading {
+  color: var(--gold);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.sub-heading {
+  color: var(--blue);
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  margin: 0;
+  font-size: 16px;
+}
+
+.right-section {
+  flex: 1 1 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 300px;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 550px;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--gold);
+  opacity: 1;
+}
+
+.subsection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subsection li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.subsection li::before {
+  content: "•";
+  color: white;
+  margin-right: 8px;
+  font-size: 1.2em;
+  line-height: 1;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+
+@media (max-width: 768px) {
+
+  .left-section,
+  .right-section {
+    flex: 1 1 100%;
+  }
+
+  .right-section {
+    justify-content: center;
+  }
+
+  .section-label {
+    margin: 0 auto 1rem auto;
+    text-align: center;
+  }
+}

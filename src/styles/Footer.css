@@ -1,0 +1,300 @@
+.footer {
+  background-color: #002025;
+  color: #bdbdbd;
+  padding: 50px 20px 30px;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 4vw;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+}
+
+.footer-partners {
+  display: flex;
+  align-items: center;
+}
+
+.footer-partners img {
+  max-height: 50px;
+  object-fit: contain;
+}
+
+.footer-left {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-address {
+  font-size: 14px;
+  line-height: 1.6;
+  width: 100%;
+  padding: 2%;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-right {
+  flex: 2 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+h5 {
+  font-family: sans-serif !important;
+}
+
+.footer-links,
+.footer-social,
+.footer-cta {
+  flex: 1 1 200px;
+}
+
+.footer-links h5,
+.footer-social h5,
+.footer-cta h5 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #ffffff;
+
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-social li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #bdbdbd;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #ffffff;
+}
+
+.sales-btn {
+  background-color: #d1a450;
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 35%;
+  font-weight: 500 !important;
+  font-size: 350;
+  width: 120%;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+
+}
+
+.sales-btn:hover {
+  background-color: #b88a3a;
+}
+
+.footer-disclaimer {
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.footer-bottom {
+  text-align: right;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #bdbdbd;
+  padding-right: 20px;
+}
+
+.mobile-cta {
+  display: none;
+}
+
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .footer-social-mobile {
+    display: none;
+  }
+
+}
+
+.footer-partners {
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 50px;
+
+  img {
+    height: 50px;
+  }
+}
+
+
+.footer-left {
+  display: flex;
+}
+
+
+.links-mobile {
+  display: none;
+}
+
+
+@media ((max-width: 550px)and (max-width:770px)) {
+  .footer-cta {
+    display: none;
+  }
+
+  .mobile-cta {
+    display: block;
+
+    button {
+      width: 138px;
+    }
+  }
+
+  .footer-social-mobile {
+    display: block;
+    padding: 1px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      background-color: transparent;
+
+      li {
+        border-right: 1px solid #bdbdbd;
+        padding-right: 10px;
+
+        font-size: 14px;
+        font-weight: 300;
+        outline: none;
+
+        a {
+          color: #bdbdbd !important;
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+
+  .mobile-res {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .footer-top-right,
+  hr {
+    display: block !important;
+  }
+
+  .footer-desktop {
+    display: none !important;
+  }
+
+  .footer-right {
+    display: none;
+  }
+
+  .links-mobile {
+    display: block;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      li a {
+        font-weight: 700 !important;
+      }
+    }
+  }
+
+  .footer-bottom-desktop {
+    display: none;
+  }
+
+  .footer-partners {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      height: 24px;
+    }
+    .ira-Img {
+      margin-top: 60%;
+      margin-bottom: 0;
+    }
+    .ira-Img2 {
+      height: 7%;
+    }
+  }
+}
+
+.footer-top-right,
+hr {
+  display: none;
+}

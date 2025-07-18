@@ -1,0 +1,325 @@
+.villa-specs-section {
+    background-color: hsl(202, 50%, 97%);
+    padding: 3rem 0;
+}
+
+.villa-title-sub {
+    font-family: Cormorant, serif !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.villa-specs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 1.5rem;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .villa-specs-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .villa-title{
+        font-size:24px !important;
+        margin-bottom:32px;
+    }
+}
+
+.villa-specs-left {
+    flex: 1;
+}
+
+.section-label {
+    font-size: 14px;
+    color: #c7a969;
+    margin-bottom: 1rem;
+    text-align: left;
+    border-radius: 6px;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.villa-title {
+    font-size: 48px !important;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #062937;
+    line-height: 1.3;
+    text-align: left;
+    font-size: 24px;
+    width: 100%;
+    word-spacing: 1px;
+
+}
+
+.villa-desc {
+    font-size: 20px;
+    color: #73788c;
+    margin-bottom: 2rem;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.spec-card {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px 19px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    gap: 16px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.spec-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.spec-title {
+    font-size: 19px;
+    margin: 0;
+    color: #333;
+    font-weight: 500 !important;
+    margin-bottom: 8px;
+    font-family: sans-serif !important;
+}
+
+.spec-value {
+    /* font-size: 15px; */
+    font-size: 100%;
+    font-family: sans-serif !important;
+    margin: 0;
+    font-weight: 500 !important;
+    color: #CD9c40;
+}
+
+.villa-specs-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.villa-image {
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+@media (min-width: 992px) {
+    .villa-specs-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+
+.villa-specs-right {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.villa-image {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.villa-specs-left {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
+
+.section-label {
+    font-weight: lighter;
+    font-size: 95%;
+    word-spacing: 1px;
+    color: #c7a969;
+    font-family: sans-serif, "poppins";
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+}
+
+
+.villa-title,
+.villa-desc {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+
+/* 10 june */
+
+
+@media (max-width : 768px) {
+    .villa-desc {
+        display: none;
+    }
+
+    .section-label {
+        font-family: 'Nunito Sans', sans-serif !important;
+    }
+
+    .villa-title{
+        font-size:24px;
+        margin-bottom:32px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .section-label {
+        font-family: 'Nunito Sans', sans-serif !important;
+    }
+
+    .specs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 0.5rem; */
+        gap: 0;
+        padding: 0;
+        gap: 12px;
+        justify-items: center;
+    }
+
+
+
+    .spec-card {
+        padding: 6px 10px;
+        border-radius: 10px;
+        gap: 8px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .spec-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .spec-title {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .spec-value {
+        font-size: 12px;
+    }
+
+    .villa-title {
+        font-size: 18px !important;
+        line-height: 1.3;
+        margin-bottom: 24px !important;
+    }
+
+    .villa-desc {
+        font-size: 13px;
+        margin-bottom: 1rem;
+        display: none;
+    }
+
+    .villa-specs-left {
+        padding: 0 0.5rem;
+    }
+
+
+    .villa-image {
+        width: 80vw;
+        height: 45vh;
+        max-width: unset;
+        margin-left: -5vw;
+        border-radius: 9px !important;
+    }
+
+    .villa-specs-right {
+        justify-content: center;
+    }
+}
+
+
+.villa-title .desktop-line {
+    display: inline;
+}
+
+@media (max-width: 758px) {
+
+    .section-label {
+        font-family: 'Nunito Sans', sans-serif !important;
+    }
+
+    .villa-title {
+        font-size: 18px !important;
+        line-height: 0.8;
+        word-spacing: 3px;
+        margin-bottom: 1.5rem
+    }
+
+    .villa-title .desktop-line {
+        display: block;
+    }
+
+    .villa-title .title-line:first-child {
+        content: "Designed for Comfort\n Built";
+        display: block;
+    }
+
+    .villa-title .title-line:first-child::after {
+        content: "";
+    }
+}
+
+
+@media(max-width:1024px){
+    .villa-title{
+    font-size:36px !important;
+}
+}
+
+@media(max-width:1400px){
+    .villa-title{
+        font-size:36px !important;
+    }
+}
+
+
+
+/* Show on medium and larger screens */
+@media screen and (min-width: 768px) {
+  .desktop-line {
+    display: inline;
+  }
+}
