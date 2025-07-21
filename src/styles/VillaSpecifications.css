@@ -104,7 +104,6 @@
 }
 
 .spec-value {
-    /* font-size: 15px; */
     font-size: 100%;
     font-family: sans-serif !important;
     margin: 0;
@@ -323,3 +322,52 @@
     display: inline;
   }
 }
+
+
+
+
+@media (min-width: 992px) {
+
+  .villa-specs-section {
+    padding-left: 3rem;  
+    padding-right: 3rem; 
+  }
+
+  .villa-specs-wrapper {
+    max-width: 1100px; 
+    margin: 0 auto;  
+  }
+
+  /* .villa-image {
+    height: 56rem;      
+    max-height: 105vh;  
+    object-fit: cover; 
+    padding-top: 4rem;
+  } */
+/* 
+  .villa-image {
+  height: 56rem;             
+  max-height: 105vh;
+  object-fit: cover;
+  padding-top: 4rem;          
+  width: 100%;
+  max-width: 65vw;     
+  border-radius:30px;  
+   } */
+
+
+   .villa-image {
+  height: 56rem;
+  max-height: 105vh;
+  object-fit: cover;
+  padding-top: 5vh;
+  width: 100%;
+  max-width: 45vw;
+  border-top-left-radius: 16px;   
+  border-top-right-radius: 16px;  
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+}
+
+

@@ -171,3 +171,28 @@
     width: 70%;
   }
 }
+
+
+
+@media (min-width: 992px) {
+  .amenities-section .col-lg-6:first-child {
+    padding-left: 6rem !important;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .amenities-section .container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .swiper-wrapper-container {
+    padding-left: 2rem;
+  }
+
+  .col-lg-6.p-4 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

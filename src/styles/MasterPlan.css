@@ -1,12 +1,22 @@
 .master-plan-section {
   padding: 40px 0;
+  backrgound-color:red;
 }
 
-.container {
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+} */
+
+.container {
+  max-width: 100% !important; 
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;      
 }
+
+
 
 .row {
   display: flex;
@@ -173,12 +183,24 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.master-plan-wrapper {
-  background-color: #f8f9fa;
+/* .master-plan-wrapper {
+  /* background-color: #f8f9fa; */
+  /* background-color:purple;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+} */ 
+
+
+
+.master-plan-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 30px; 
+  box-sizing: border-box;
 }
+
 
 .download-button.large {
   padding: 14px 32px;
@@ -328,12 +350,19 @@
     padding-left: 0px;
   }
 
-  .master-plan-wrapper {
+  /* .master-plan-wrapper {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     padding-left: 5vw;
     padding-right: 5vw;
     box-sizing: border-box;
+  } */
+
+  .master-plan-wrapper {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -344,10 +373,24 @@
 
 }
 
+.master-plan-wrapper,
+.legend-container,
+.rounded-4 {
+  border-radius: 0 !important;
+}
 
-/* 
-.desktop-large{
-  /* background-color: red; */
-  height:100%;
-  width:50%!important;
-/* } */ 
+
+
+
+/* .download-button-containers {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.below {
+  margin-left: 0 !important;
+  align-self: flex-start;
+}
+ */

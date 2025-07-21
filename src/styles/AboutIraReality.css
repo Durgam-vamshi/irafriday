@@ -1,6 +1,8 @@
 .about-section {
-  padding: 60px 20px;
+  padding: 20px 20px;
   background-color: #ffffff;
+  padding-bottom:0px;
+  margin-bottom:0;
 }
 
 span {
@@ -67,6 +69,12 @@ span {
   max-width: 650px;
 }
 
+
+.Location-specs{
+  color:rgba(33, 37, 41, 0.75);
+}
+
+
 .about-tag {
   display: inline-block;
   background-color: #f3f1f6;
@@ -76,6 +84,8 @@ span {
   padding: 5px 12px;
   border-radius: 6px;
   margin-bottom: 10px;
+  padding-left:4%;
+  padding-bottom:3%;
 }
 
 
@@ -182,3 +192,9 @@ span {
   }
 }
 
+
+
+@media (min-width: 992px) {
+  .about-container {
+    padding-top: 30px; }
+}

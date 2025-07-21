@@ -61,7 +61,7 @@ function MasterPlan() {
                 </div>
               </div>
               <div className="download-button-containers  mt-4">
-                <button className=" download-button-larger">Download Brochure</button>
+                <button className=" download-button-larger below">Download Brochure</button>
               </div>
             </div>
 

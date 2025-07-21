@@ -13,12 +13,17 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 2rem;  /* ✅ Applies desktop left padding */
+  padding-right: 1rem; /* ✅ Adds a bit of right spacing for balance */
+}
+
+.amenities-container {
+  /* No extra padding needed since .container handles it */
 }
 
 .amenities-content {
   display: flex;
-  /* flex-wrap: wrap; */
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +45,6 @@
   width: fit-content;
   min-width: 120px;
   max-width: 80%;
-  height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
   font-size: 14px;
@@ -62,6 +66,29 @@
 ul {
   margin: 0;
   font-size: 16px;
+}
+
+.subsection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subsection li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.subsection li::before {
+  content: "•";
+  color: white;
+  margin-right: 8px;
+  font-size: 1.2em;
+  line-height: 1;
+  flex-shrink: 0;
+  padding-top: 2px;
 }
 
 .right-section {
@@ -95,32 +122,8 @@ ul {
   opacity: 1;
 }
 
-.subsection ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.subsection li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 8px;
-  color: #fff;
-}
-
-.subsection li::before {
-  content: "•";
-  color: white;
-  margin-right: 8px;
-  font-size: 1.2em;
-  line-height: 1;
-  flex-shrink: 0;
-  padding-top: 2px;
-}
-
 
 @media (max-width: 768px) {
-
   .left-section,
   .right-section {
     flex: 1 1 100%;
@@ -133,5 +136,67 @@ ul {
   .section-label {
     margin: 0 auto 1rem auto;
     text-align: center;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 0; /* default - no padding applied globally */
+  padding-right: 0;
+}
+
+
+
+.amenities-container {
+  padding-left: 3rem !important;
+  padding-right: 1rem !important;
+}
+
+
+
+/* Base styles */
+.amenities-section {
+  padding: 3rem 1rem; /* mobile/tablet spacing */
+}
+
+.amenities-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop layout */
+@media (min-width: 992px) {
+  .amenities-container {
+    flex-direction: row;
+    padding-left: 10rem;
+    padding-right: 2rem;
+  }
+
+  .left-section, .right-section {
+    flex: 1;
+  }
+
+  .left-section {
+    padding-right: 2rem;
+  }
+
+  .right-section {
+    padding-left: 2rem;
+  }
+
+  .slide-image {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }

@@ -28,12 +28,16 @@ function HeroSlider() {
         <div className="left-content">
           <h1 className="hero-heading">
             4BHK
-            Gated Villa
-            <br />
+            Gated
+            <br/> 
+            Villa
             Community in
             <br />
             Adibatla
           </h1>
+
+
+          
           <p className="descript-hero">Experience 19.5 acres of gated community living
             at <br /> Urban Ranch</p>
             <div className="btn-container">

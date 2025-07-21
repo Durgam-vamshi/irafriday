@@ -14,7 +14,7 @@ function GallerySection() {
         alt="Decoration"
         className="vector-right"
       />
-      <div className="container">
+      <div className="container gallery-container">
         <div className="gallery-inner">
           <h3 className="gallery-title">Gallery</h3>
           <div className="gallery-grid">

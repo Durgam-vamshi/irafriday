@@ -2,7 +2,6 @@
   background-color: #f4f8f9;
   padding: 10vh 5vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* min-height: 80vh; */
   box-sizing: border-box;
 }
 
@@ -98,6 +97,7 @@ strong {
 
 .testimonial-text {
   font-size: 1.125rem;
+  font-weight: 498 !important;
   color: rgb(31, 39, 68);
   margin-bottom: 20px;
   line-height: 1.5;

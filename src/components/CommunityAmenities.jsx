@@ -8,22 +8,20 @@ import { Pagination } from "swiper/modules";
 function CommunityAmenities() {
   return (
     <div className="amenities-section">
-      <div className="container">
+      <div className="container amenities-container">
         <div className="amenities-content">
           <div className="left-section">
-            <div className="section-label text-white">Community &amp; Amenities</div>
+            <div className="section-label text-white">
+              Community &amp; Amenities
+            </div>
             <h2 className="section-heading">
               A Lifestyle that Breathes <br /> and Belongs
             </h2>
             <div className="subsection">
-              <h5 className="sub-heading">Social & Community Spaces
-              </h5>
+              <h5 className="sub-heading">Social & Community Spaces</h5>
               <ul>
-                <li>
-                  Grand Clubhouse, Banquet Hall, Guest Suites
-                </li>
-                <li>Party Lawns, Amphitheater, Café‑style seating
-                </li>
+                <li>Grand Clubhouse, Banquet Hall, Guest Suites</li>
+                <li>Party Lawns, Amphitheater, Café‑style seating</li>
               </ul>
             </div>
           </div>

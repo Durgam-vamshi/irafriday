@@ -37,7 +37,7 @@ function AboutIraRealty() {
                                     </svg>
                                 </div>
                                 <span>
-                                    <span className='Location-Ira'>IRA The Square Villas — </span> Kongarakalan</span>
+                                    <span className='Location-Ira'>IRA The Square Villas — </span> <span className='Location-specs'>Kongarakalan</span></span>
                             </div>
                             <div className="project-item">
                                 <div className="project-icon-wrapper">
@@ -52,7 +52,8 @@ function AboutIraRealty() {
                                 </div>
                                 <span>
                                     <span className='Location-Ira'>Moonglade Apartments — </span>
-                                    Narsingi</span>
+                                    <span className='Location-specs'>Narsingi</span>
+                                </span>
                             </div>
 
                             <div className="project-item">
@@ -67,8 +68,9 @@ function AboutIraRealty() {
                                     </svg>
                                 </div>
                                 <span>
-                                    <span className='Location-Ira'>IRA Elevate Villas —  </span>
-                                    Shamshabad</span>
+                                    <span className='Location-Ira'>IRA Elevate Villas — </span>
+                                    <span className='Location-specs'> Shamshabad</span>
+                                </span>
                             </div>
                         </div>
                     </div>

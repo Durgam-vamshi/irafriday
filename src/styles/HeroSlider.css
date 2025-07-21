@@ -32,13 +32,11 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero-heading {
-    font-family: 'Cormorant', serif !important;
-    font-size: 1.8rem;
-    word-spacing: 4px;
-    line-height: 1.2;
-    text-align: center;
+  h1.hero-heading {
     text-transform: capitalize !important;
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+    text-align: center !important;
   }
 
   .descript-hero {
@@ -207,6 +205,10 @@ body {
 @media (max-width: 992px) {
   .descript-hero {
     text-align: center !important;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
   }
 
 
@@ -218,16 +220,21 @@ body {
 
   .left-content {
     max-width: 90%;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     text-align: center !important;
+    margin-bottom:0 !important;
   }
 
   .left-content h1 {
     font-size: 38px;
+    text-transform: capitalize !important;
   }
 
   .left-content p {
     font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .form-card {
@@ -260,6 +267,7 @@ body {
 
   .left-content h1 {
     font-size: 32px;
+    text-transform: capitalize !important;
   }
 
   .form-card {
@@ -288,6 +296,7 @@ body {
 
   .left-content h1 {
     font-size: 28px;
+    text-transform: capitalize !important;
   }
 
   .descript-hero {
@@ -300,6 +309,16 @@ body {
   .partners img {
     height: 50px;
   }
+
+  .form-card button {
+    font-size: 10px;
+  }
+
+  .form-card h2 {
+    font-size: 24px !important;
+    font-weight: 400;
+  }
+
 
   .descript-hero {
     text-align: center !important;
@@ -335,6 +354,10 @@ body {
   .partner-right {
     height: 20px;
   }
+
+
+
+
 }
 
 @media(min-width:567px) {
@@ -420,6 +443,7 @@ body {
   .descript-hero {
     text-align: left !important;
   }
+
 }
 
 
@@ -621,11 +645,21 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 0%;
 }
 
 
 @media (max-width: 550px) {
   .btn-container {
-    margin-top: 20px;
+    margin-top: 1px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .hero-heading {
+    text-transform: capitalize !important;
+    display: block !important;
   }
 }

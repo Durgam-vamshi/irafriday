@@ -5,6 +5,8 @@ function UrbanRanchSection() {
   return (
     <div className="urban-ranch-section">
       <div className="container">
+
+      
         <div className="ranch-content-wrapper">
           <div className="ranch-text">
             <div className="title-container c3-tittle mb-2">
@@ -14,7 +16,9 @@ function UrbanRanchSection() {
               Ranch Life = Refined Living
             </h3>
             <p className="section-description">
-              Welcome to IRA Urban Ranch — Set in Kongarakalan, near Adibatla, this 17-acre gated villa community is crafted for families seeking luxury, privacy, and soul-deep connection.
+              Welcome to IRA Urban Ranch — Set in Kongarakalan, near Adibatla,
+              this 17-acre gated villa community is crafted for families seeking
+              luxury, privacy, and soul-deep connection.
             </p>
           </div>
           <div className="image-wrapper">
@@ -25,6 +29,8 @@ function UrbanRanchSection() {
             />
           </div>
         </div>
+
+
       </div>
     </div>
   );

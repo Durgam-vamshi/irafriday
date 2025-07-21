@@ -12,8 +12,8 @@ const mainImage = "https://urbanranch.irarealty.in/_next/static/media/C4_Westfac
 const SmartLiving = () => {
     return (
         <div className="py-4 bg-white" id="smart-living">
-            <div className="container">
-                <div>
+            <div className="container smartLiving-container">
+                <div className = "smartLiving">
                     <h5 className="Heading">Smart Living, Without Lifting A Finger</h5>
                     <p className="smartliving_p">
                         Your villa at IRA Urban Ranch comes fully pre-fitted with complete home automation -
