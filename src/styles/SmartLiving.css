@@ -19,22 +19,24 @@
   text-align: left;
   font-size: 1.5rem;
   font-family: 'Cormorant Serif', serif !important;
-  font-weight: 540;
-   color: #08232a;
-    font-size: 2rem;
-    line-height: 1.2;
-    padding: 3%;
-    word-spacing: 0.3px;
-  }
+  font-weight: 547 !important;
+  color: #08232a;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 3%;
+  word-spacing: 0.3px;
+}
 
 .smartliving_p {
   margin-bottom: 0;
+  padding-left: 3%;
   padding-bottom: 1rem;
   text-align: left;
   color: #4a5568;
   line-height: 1.5;
-  font-size: 0.8rem;
+
   font-weight: 400;
+  font-size:1.5rem !important;
   word-spacing: 1px;
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -48,7 +50,6 @@
     display: block;
   }
 }
-
 
 .flex-col-lg-row {
   display: flex;
@@ -82,9 +83,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.2rem;
-  padding:0;
+  padding: 0;
+  padding-left: 0.6rem;
   text-align: left;
-  margin: 0.75rem 0;
+  margin: 0;
 }
 
 @media (min-width: 1024px) {
@@ -99,12 +101,11 @@
   flex-direction: row;
   align-items: center;
   padding: 0.75rem 1rem;
-  margin: 0.5rem 0;
+  margin: 0;
   min-width: 250px;
   font-family: 'Nunito Sans', sans-serif;
   box-sizing: border-box;
 }
-
 
 .smartliving_icon {
   display: flex;
@@ -137,7 +138,6 @@
   }
 }
 
-
 .smartliving_icon_name {
   margin: 0;
   padding: 0.5rem 0;
@@ -154,7 +154,9 @@
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-right: 0;
 }
+
 
 .rounded {
   border-radius: 0.5rem;
@@ -169,7 +171,6 @@
   width: 100%;
 }
 
-
 .mobile-image-adjust {
   width: 90%;
   border-radius: 1%;
@@ -179,13 +180,27 @@
 
 @media (max-width: 767.98px) {
   .mobile-image-adjust {
-    width: 100vw !important;
-    height: 35vh !important;
+    width: 88vw !important;
+    margin-bottom: 0 !important;
+    border-radius: 5px;
+    height: 17vh !important;
     aspect-ratio: 4 / 3;
+    margin-top:3%;
     object-fit: cover;
   }
-}
 
+  .Heading {
+    font-size: 24px;
+    line-height: 35px;
+    padding-left: 2% !important;
+  }
+
+  .BolderSmart{
+    font-weight: bolder;
+    display:inline-block;
+  }
+
+}
 
 @media (max-width: 525px) {
   .grid-cols-2-lg-1 {
@@ -223,14 +238,31 @@
 }
 
 @media (min-width:992px) {
-  .smartLiving {
-    padding-left: 10vw !important;
+
+.smartliving_icon_container {
+    padding-left: 2rem;
   }
 
-  .smartLiving-container {
-    margin: 0;
-    padding: 0;
+
+  .grid-cols-2-lg-1 {
+    padding-left: 6.5rem;
   }
+
+  .Heading {
+    padding-top:0.2%;
+    padding-left: 10vw !important;
+    font-size:33px;
+
+    letter-spacing: 0.8px;
+  }
+
+  .smartliving_p {
+    padding-left: 10vw !important;
+    padding-bottom:3% !important;
+  }
+
+
+
 }
 
 @media (min-width: 1024px) {
@@ -241,3 +273,11 @@
 }
 
 
+@media (max-width:768px){
+  .smartliving_p{
+  font-size:14px !important;
+  }
+  .BolderSmart{
+    color:#4a5568 !important;
+  }
+}

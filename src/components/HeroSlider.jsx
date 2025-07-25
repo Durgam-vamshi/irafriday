@@ -26,33 +26,37 @@ function HeroSlider() {
           className="img-fluid1"
         />
         <div className="left-content">
-          <h1 className="hero-heading">
-            4BHK
-            Gated
-            <br/> 
-            Villa
-            Community in
-            <br />
+
+
+          {/* Desktop View H1 */}
+          <h1 className="hero-heading desktop-heading">
+            4BHK Gated<br />
+            Villa Community in<br />
             Adibatla
           </h1>
 
+          {/* Mobile View H1 */}
+          <h1 className="hero-heading mobile-heading">
+            4BHK<br />
+            GATED VILLA<br />
+            COMMUNITY IN<br />
+            ADIBATLA
+          </h1>
 
-          
           <p className="descript-hero">Experience 19.5 acres of gated community living
             at <br /> Urban Ranch</p>
-            <div className="btn-container">
-
-          <button
-            className="btn fw-bold px-4 py-2 intro_btn"
-            style={{
-              color: "#f7c04a",
-              backgroundColor: "white",
-              borderWidth: "1px",
-              borderColor: "#f7c04a",
-            }}
-          >
-            Download Brochure
-          </button>
+          <div className="btn-container">
+            <button
+              className="btn fw-bold px-4 py-2 intro_btn"
+              style={{
+                color: "#f7c04a",
+                backgroundColor: "white",
+                borderWidth: "1px",
+                borderColor: "#f7c04a",
+              }}
+            >
+              Download Brochure
+            </button>
           </div>
 
           <div className="partners">
@@ -69,10 +73,11 @@ function HeroSlider() {
           </div>
         </div>
 
+
         <div className="form-card">
           <h2 className="unlock-tag">Unlock Early Access</h2>
           <form>
-            <div className="form-group">
+            <div className="form-group name-mobile-group">
               <input type="text" name="name" placeholder="Name" required />
               <input type="tel" name="mobile" placeholder="Mobile Number" required />
             </div>

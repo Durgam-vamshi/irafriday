@@ -5,6 +5,7 @@ function ContactUs() {
   return (
     <section className="contact-section" id="contact-us">
       <div className="contact-wrapper">
+
         <div className="contact-image">
           <img
             src="https://urbanranch.irarealty.in/_next/static/media/c6.a2cd09fc.webp"
@@ -39,13 +40,13 @@ function ContactUs() {
                 type="tel"
                 placeholder="Phone Number"
                 required
-                className="contactus-input half-width-mobile"
+                className="contactus-input  phone-num half-width-mobile"
               />
               <input
                 type="text"
                 placeholder="Select Date"
                 required
-                className="contactus-input full-width-mobile"
+                className="contactus-input date-input full-width-mobile"
               />
             </div>
 
@@ -63,14 +64,16 @@ function ContactUs() {
               </label>
             </div>
 
-
             <div className="btn-group">
+
               <button
                 type="submit"
                 className="contactus-btn primary show-desktop"
               >
                 Schedule your site visit
+              
               </button>
+
               <button
                 type="submit"
                 className="contactus-btn primary show-mobile"
@@ -81,8 +84,8 @@ function ContactUs() {
               <button type="button" className="contactus-btn secondary">
                 Download Floor Plans
               </button>
+              
             </div>
-
 
 
           </form>

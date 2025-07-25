@@ -1,29 +1,37 @@
 .testimonials {
   background-color: #f4f8f9;
-  padding: 10vh 5vw;
+  padding: 4vh 2vw 4vh 2vw;
+  margin-top: 0;
+  margin-left: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
+  padding-bottom: 4%;
 }
 
 
 @media (max-width: 768px) {
   .testimonials {
-    /* min-height: 90vh; */
-    padding: 12vh 5vw;
+    padding: 3vh 2vw 3vh 2vw;
+    padding-top: 0;
+  }
+
+  .testimonial-card h3 {
+    font-size: 12px !important;
+  }
+
+  .Testimonial-item {
+    font-size: 2%;
   }
 }
-
 
 strong {
   font-size: 18px;
   color: rgb(11, 46, 41) !important;
 }
 
-
 .item-role {
   font-size: 18px !important;
 }
-
 
 .Testimonials-heading {
   font-size: 24px !important;
@@ -46,12 +54,14 @@ strong {
   padding: 5px 10px;
   border-radius: 4px;
   margin-bottom: 10px;
+  margin-top: -8px;
+  margin-right: 12px;
 }
 
 .section-title {
   font-size: 36px !important;
   color: #1b2a41 !important;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0 !important;
   font-weight: 700 !important;
   white-space: pre-wrap;
   font-family: 'Cormorant', serif !important;
@@ -83,11 +93,15 @@ strong {
   text-align: left;
 }
 
+
 .quote-icon {
-  font-size: 30px;
-  color: #ddd;
+  width: 32px;
+  height: 32px;
   margin-bottom: 10px;
+  margin-top: 0;
+  object-fit: contain;
 }
+
 
 .testimonial-card h3 {
   font-size: 24px;
@@ -102,7 +116,6 @@ strong {
   margin-bottom: 20px;
   line-height: 1.5;
 }
-
 
 .testimonial-footer {
   display: flex;
@@ -129,7 +142,6 @@ strong {
   margin: 2px 0 0;
 }
 
-
 @media (max-width: 990px) {
   .testimonial-inner {
     padding: 0 4vw;
@@ -140,7 +152,7 @@ strong {
   }
 
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem !important;
     white-space: pre-wrap;
     line-height: 1.4;
     font-family: 'Cormorant', serif;
@@ -182,7 +194,7 @@ strong {
   }
 
   .testimonial-text {
-    font-size: 13.5px;
+    font-size: 12px;
     line-height: 1.5;
   }
 
@@ -199,6 +211,7 @@ strong {
   .testimonial-cards .testimonial-card:nth-child(3) {
     display: none;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -219,12 +232,16 @@ strong {
 
   .testimonial-card {
     flex: 0 0 auto;
-    width: 80vw;
+    width: 60vw;
     max-width: 85vw;
-    min-height: 260px;
-    max-height: 220px;
-    padding: 2vh 4vw;
+    min-height: 220px;
+    padding: 1vh 2vw !important;
     scroll-snap-align: start;
+  }
+
+  .quote-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -234,6 +251,106 @@ strong {
   }
 
   .section-title {
-    font-size: 36px;
+    line-height: 35px;
+    letter-spacing: .26px;
   }
+}
+
+.desktop-view {
+  display: block;
+  text-align: left;
+}
+
+.mobile-view {
+  display: none;
+  text-align: left;
+}
+
+@media (max-width: 990px) {
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+    text-align: left;
+    font-size: 24px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0 4vw 3vh;
+    gap: 4vw;
+    scrollbar-width: none;
+  }
+
+  .testimonial-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-card {
+    flex: 0 0 auto;
+    width: 40vw;
+    max-width: 40vw;
+    min-height: 190px;
+    padding: 2vh 4vw;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+  }
+
+  .testimonial-cards .testimonial-card:nth-child(3) {
+    display: block;
+  }
+
+  .Testimonials-heading {
+    font-size: 0.2%;
+  }
+
+  .quote-icon {
+    width: 25%;
+    font-size: 0.8% !important;
+  }
+}
+
+@media (max-width:990px) {
+  .itemsrole {
+    font-size: 1% !important;
+  }
+
+  .testimonial-footer {
+    padding-top: 0%;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-main-tag {
+    margin-left: 7vw;
+  }
+
+  .section-title {
+    margin-left: 7vw;
+    padding-left: 7vw;
+  }
+
+  .testimonial-cards {
+    margin-left: 7vw;
+  }
+}
+
+@media (max-width: 990px) {
+  .testimonial-card:nth-child(1) .testimonial-footer {
+    padding-top: 16px;
+  }
+
+  .testimonial-card:nth-child(2) .testimonial-footer {
+    padding-top: 16px;
+  }
+
 }

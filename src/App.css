@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
+@media (max-width :768px){
+ 
+  /* .partners img{
+    height:5% !important;
+  }
+
+  .partner-right{
+    height:2% !important;
+  }
+   */
+  
+}

@@ -82,6 +82,7 @@
   border-radius: 5px;
   text-align: left;
   margin-left: 1.5rem;
+  margin-left: 1.4rem;
   font-family: 'Nunito Sans', sans-serif;
   background-color: #F8F9FE;
   width: 250px;
@@ -92,7 +93,6 @@
   text-align: left;
   margin-bottom: 1.5rem;
 }
-
 
 
 @media (max-width: 576px) {
@@ -147,22 +147,27 @@
     /* ensure text is left-aligned */
   }
 
+
   .Title {
+    text-align: left;
+    margin-left: -4px !important;
     font-size: 9px;
     white-space: normal;
     overflow: visible;
     text-overflow: unset;
   }
 
+
+
   .section-heading {
     margin-bottom: 12px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 24px;
   }
 
   .section-description {
     margin-bottom: 10px;
-    font-size: 8px;
+    font-size: 14px;
     line-height: 1.5;
   }
 }
@@ -179,26 +184,24 @@
 
 @media (min-width: 992px) {
   .ranch-image {
-    max-width: 80vw;           
+    max-width: 80vw;
     height: auto;
-    border-radius: 1.2rem;     
+    border-radius: 1.2rem;
     object-fit: cover;
-    padding-bottom: 2vh;     
+    padding-bottom: 2vh;
   }
 
   .image-wrapper {
     justify-content: center;
     align-items: center;
-    padding-bottom: 1vh;       
+    padding-bottom: 1vh;
   }
 
 
-.Title {
-  width: 320px;
-  font-size: 20px;
-  text-align: left;    
-  margin-left: 1.5rem; 
+  .Title {
+    width: 320px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 1.5rem;
+  }
 }
-}
-
-

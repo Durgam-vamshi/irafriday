@@ -5,9 +5,10 @@ function AboutIraRealty() {
     return (
         <section className="about-section">
             <div className="about-container">
+
                 <div className="about-images">
-                    <img src="https://urbanranch.irarealty.in/_next/static/media/aboutimg1.9c6811d2.webp" alt="Project 1" />
-                    <img src="https://urbanranch.irarealty.in/_next/static/media/aboutimg2.5ddb16f7.webp" alt="Project 2" />
+                    <img src="https://urbanranch.irarealty.in/_next/static/media/aboutimg1.9c6811d2.webp" alt="Project 1" className='first' />
+                    <img src="https://urbanranch.irarealty.in/_next/static/media/aboutimg2.5ddb16f7.webp" alt="Project 2" className='second' />
                     <img src="https://urbanranch.irarealty.in/_next/static/media/aboutimg3.38199b5f.webp" alt="Project 3" className='third' />
                 </div>
 
@@ -21,6 +22,7 @@ function AboutIraRealty() {
                             At IRA Realty, we're redefining real estate with transparency, trust, and transformative design.
                         </p>
                     </div>
+                    
                     <div className="about-projects">
                         <h4 className="landmark-heading">Our Landmark Projects:</h4>
                         <div className="project-list">
@@ -74,9 +76,12 @@ function AboutIraRealty() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
+
+
+                </div>
+
+            </div>
         </section>
     );
 }

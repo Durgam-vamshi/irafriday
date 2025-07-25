@@ -33,12 +33,12 @@ function Footer() {
               <hr />
               <div className="footer-top-right">
                 <div className=" mobile-cta">
-                  <h5>Talk to our sales expert</h5>
+                  <h5 className="footer-salesheading">Talk to our sales expert</h5>
                   <button className="sales-btn">Click Here</button>
                 </div>
 
-                <div className="footer-address mobile">
-                  <h4>Address:</h4>
+                <div className="footer-address address-container mobile">
+                  <h4 className="Address">Address:</h4>
                   <i className="fas fa-map-marker-alt"></i>
 
                   4-49/2, Besides Anvaya Conventions Road, Financial District,
@@ -46,15 +46,19 @@ function Footer() {
                 </div>
 
 
-                <div className="contact-item">
+                <div className="contact-item phone-container">
                   <h4>Phone:</h4>
                   <i className="fas fa-phone-alt"></i>+91 9121 777 777
                 </div>
-                <div className="contact-item">
+
+                <div className="contact-item email-container">
                   <h4>Email:</h4>
                   <i className="fas fa-envelope"></i> info@irarealty.in
                 </div>
-                <div className="footer-social-mobile">
+
+
+
+                <div className="footer-social-mobile socialMedia-container">
                   <h5>Social Media</h5>
                   <ul>
                     <li>
@@ -80,6 +84,9 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
+
+
+
               </div>
             </div>
             <div className="footer-links links-mobile">
@@ -148,9 +155,11 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="footer-social">
+
+              <div className="footer-social ">
                 <h5>Social Media</h5>
-                <ul>
+                
+                <ul className="Sociallinks">
                   <li>
                     <a
                       href="https://facebook.com"
@@ -173,7 +182,28 @@ function Footer() {
                     <a href="#">Whatsapp</a>
                   </li>
                 </ul>
+
+
+
               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               <div className="footer-cta">
                 <h5>Talk to our sales expert</h5>
                 <button className="sales-btn">Click Here</button>

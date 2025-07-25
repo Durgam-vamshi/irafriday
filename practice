@@ -1,0 +1,50 @@
+const someQuery = async (req, res) => {
+    const output = await someModel.getById()
+    if (!output) {
+        return "Nothing is avialable"
+    } else {
+        return "Something is avaialble"
+    }
+}
+
+
+
+const db = require('./path')
+const someModel = require("someModel")
+
+
+const getAll = async () => {
+    try {
+        const [result] = await db.execute("SELECT * FROM Something")
+        return result
+    } catch (err) {
+        res.error(error.message)
+    }
+}
+
+const getById = async () => {
+    try {
+        const [someModel] = await db.execute("SELECT id  * FROM table")
+        return result[0]
+    } catch (err) {
+        res.error(error.message)
+    }
+}
+
+const DeleteById = async () => {
+    try {
+        const [deleteSomething] = await db.execute("Delete something from table")
+        return result[0]
+    } catch (err) {
+        res.error(error.message)
+    }
+}
+
+const UpdateById = async () => {
+    try {
+        const [result] = await db.execute("Update some value from the table")
+        return result[0]
+    } catch (err) {
+        res.error(error.message)
+    }
+}

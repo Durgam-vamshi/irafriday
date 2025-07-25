@@ -26,8 +26,9 @@
 .navbar-mobile-menu-btn {
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 24px;
   color: #ffffff;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -114,7 +115,7 @@
   width: 100%;
   padding-top: 2.8rem;
   padding-left: 15rem;
-  padding-left:9rem;
+  padding-left: 9rem;
   background-color: transparent;
   justify-content: space-around !important;
 
@@ -125,6 +126,7 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 10px;
+  padding-left: 60px;
   display: flex;
   align-items: center;
 }
@@ -135,7 +137,7 @@
   gap: 3.6rem;
   align-items: center;
   margin-left: 200px;
-  
+
 }
 
 .navbar-desktop-links .nav-link {
@@ -144,7 +146,8 @@
   position: relative;
   padding: 0.5rem 0;
   transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block; /* Required for transform effects to apply visually */
+  display: inline-block;
+  /* Required for transform effects to apply visually */
 
 }
 

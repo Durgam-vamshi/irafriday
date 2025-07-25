@@ -75,6 +75,9 @@ function AmenitiesSection() {
               ))}
             </Swiper>
           </div>
+
+
+
         </div>
       </div>
     </section>

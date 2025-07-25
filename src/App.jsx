@@ -18,24 +18,26 @@ export default function App() {
   return (
     <div className="font-sans overflow-x-hidden w-full mx-auto">
       <style>
+
         {`
           html, body {
-            overflow-x: hidden; /* Prevents horizontal scrolling */
-            width: 100%; /* Ensures the body takes full width */
-            margin: 0; /* Resets default margin */
-            padding: 0; /* Resets default padding */
+            overflow-x: hidden; 
+            width: 100%; 
+            margin: 0; 
+            padding: 0; 
           }
-          /* Apply a global box-sizing for all elements */
-          * {
+          {
             box-sizing: border-box;
           }
         `}
+
+
       </style>
       <HeroSlider />
       <VillaSpecifications />
       <UrbanSection />
       <AmenitiesSection />
-      <br/>
+      {/* <br/> */}
       <GallerySection />
       <SmartLiving />
       <MasterPlan />

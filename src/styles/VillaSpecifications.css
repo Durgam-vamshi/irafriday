@@ -28,9 +28,10 @@
         justify-content: space-between;
         align-items: start;
     }
-    .villa-title{
-        font-size:24px !important;
-        margin-bottom:32px;
+
+    .villa-title {
+        font-size: 24px !important;
+        margin-bottom: 32px;
     }
 }
 
@@ -39,7 +40,7 @@
 }
 
 .section-label {
-    font-size: 14px;
+    font-size: 18px !important;
     color: #c7a969;
     margin-bottom: 1rem;
     text-align: left;
@@ -193,9 +194,9 @@
         font-family: 'Nunito Sans', sans-serif !important;
     }
 
-    .villa-title{
-        font-size:24px;
-        margin-bottom:32px;
+    .villa-title {
+        font-size: 24px;
+        margin-bottom: 32px;
     }
 
 }
@@ -257,8 +258,8 @@
 
 
     .villa-image {
-        width: 80vw;
-        height: 45vh;
+        width: 88vw;
+        height: 55vh;
         max-width: unset;
         margin-left: -5vw;
         border-radius: 9px !important;
@@ -302,15 +303,15 @@
 }
 
 
-@media(max-width:1024px){
-    .villa-title{
-    font-size:36px !important;
-}
+@media(max-width:1024px) {
+    .villa-title {
+        font-size: 36px !important;
+    }
 }
 
-@media(max-width:1400px){
-    .villa-title{
-        font-size:36px !important;
+@media(max-width:1400px) {
+    .villa-title {
+        font-size: 36px !important;
     }
 }
 
@@ -318,9 +319,9 @@
 
 /* Show on medium and larger screens */
 @media screen and (min-width: 768px) {
-  .desktop-line {
-    display: inline;
-  }
+    .desktop-line {
+        display: inline;
+    }
 }
 
 
@@ -328,46 +329,91 @@
 
 @media (min-width: 992px) {
 
+    .villa-specs-section {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+
+
+
+    .villa-specs-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+
+    .villa-image {
+        height: 56rem;
+        max-height: 105vh;
+        object-fit: cover;
+        padding-top: 5vh;
+        width: 100%;
+        max-width: 45vw;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+
+
+@media (max-width:992px) {
+    .villa-title {
+        font-size: 24px !important;
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-label {
+        font-size: 8px !important;
+        margin-top: 0 !important;
+        margin-bottom: 2rem;
+        padding: 0.5rem 1rem !important;
+        border-radius: 4px;
+    }
+
+}
+
+
+
+
+/* @media (max-width: 576px) {
   .villa-specs-section {
-    padding-left: 3rem;  
-    padding-right: 3rem; 
-  }
+    padding: 1rem 0 !important; /* reduce top-bottom white space */
+/* }
 
   .villa-specs-wrapper {
-    max-width: 1100px; 
-    margin: 0 auto;  
+    padding: 0 !important; 
+    margin: 0 !important;  
   }
 
-  /* .villa-image {
-    height: 56rem;      
-    max-height: 105vh;  
-    object-fit: cover; 
-    padding-top: 4rem;
-  } */
-/* 
-  .villa-image {
-  height: 56rem;             
-  max-height: 105vh;
-  object-fit: cover;
-  padding-top: 4rem;          
-  width: 100%;
-  max-width: 65vw;     
-  border-radius:30px;  
-   } */
+  .villa-specs-right {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+} */
 
 
-   .villa-image {
-  height: 56rem;
-  max-height: 105vh;
-  object-fit: cover;
-  padding-top: 5vh;
-  width: 100%;
-  max-width: 45vw;
-  border-top-left-radius: 16px;   
-  border-top-right-radius: 16px;  
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+@media (max-width: 576px) {
+    .villa-specs-section {
+        padding-top: 0.5rem !important;
+        /* reduce top space */
+        padding-bottom: 0.5rem !important;
+        /* reduce bottom space */
+    }
+
+    .villa-specs-wrapper {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .villa-specs-right {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
 }
-}
-
-

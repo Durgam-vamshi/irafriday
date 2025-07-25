@@ -10,7 +10,7 @@ function UrbanRanchSection() {
         <div className="ranch-content-wrapper">
           <div className="ranch-text">
             <div className="title-container c3-tittle mb-2">
-              <h2 className="Title">Welcome to Urban Ranch</h2>
+              <h2 className="Title urban-ranch-title">Welcome to Urban Ranch</h2>
             </div>
             <h3 className="section-heading text-dark">
               Ranch Life = Refined Living

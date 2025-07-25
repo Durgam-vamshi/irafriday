@@ -27,7 +27,7 @@ function GallerySection() {
               <img
                 src="https://urbanranch.irarealty.in/_next/static/media/C8.05574929.webp"
                 alt="Gallery Image 2"
-                className="gallery-img small mt"
+                className="gallery-img small"
               />
             </div>
 
@@ -35,19 +35,19 @@ function GallerySection() {
               <img
                 src="https://urbanranch.irarealty.in/_next/static/media/image5.60e42198.webp"
                 alt="Gallery Image 3"
-                className="gallery-img wide"
+                className="gallery-img wide GalleryImage3"
               />
             </div>
             <div className="gallery-col">
               <img
                 src="https://urbanranch.irarealty.in/_next/static/media/c7.4801623d.webp"
                 alt="Gallery Image 4"
-                className="gallery-img medium"
+                className="gallery-img medium GalleryImage4"
               />
               <img
                 src="https://urbanranch.irarealty.in/_next/static/media/c2.b80108fc.webp"
                 alt="Gallery Image 5"
-                className="gallery-img small mt"
+                className="gallery-img small GalleryImage5"
               />
             </div>
           </div>

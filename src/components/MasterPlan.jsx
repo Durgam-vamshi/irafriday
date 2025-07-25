@@ -8,12 +8,10 @@ function MasterPlan() {
         <div className="master-plan-wrapper p-4 rounded-4 bg-light">
           <div className="d-flex flex-row master-plan-con flex-lg-row g-5 align-items-start">
             <div className="col-lg-7 d-flex flex-column">
-              <h3 className="mb-3  Heading">Master Plan</h3>
-
+              <h3 className="mb-3 masterplan-heading">Master Plan</h3>
               <div className="download-button-container d-none d-lg-flex">
                 <button className="download-button large desktop-large">Download Brochure</button>
               </div>
-
               <div className="d-flex align-items-center justify-content-center">
                 <img
                   alt="Master plan image"
@@ -27,9 +25,10 @@ function MasterPlan() {
                 />
               </div>
             </div>
-            <div className="col-12 col-lg-5 rounded-4 py-3 mt-2">
+            <div className="col-12 col-lg-5 rounded-4 py-3 mt-2 main-legend-container" >
               <div className="legend-container p-4">
-                <h3 className="mb-4 fw-bold legend-heading Heading">Legend</h3>
+                <h3 className="mb-4 fw-bold legend-heading">Legend</h3>
+
                 <div className="row">
                   {[
                     ["1.", "Entry/exit with security cabin", "13.", "Mini soccer"],
@@ -51,7 +50,6 @@ function MasterPlan() {
                         <span className="me-2">{num1}</span>
                         <span>{text1}</span>
                       </div>
-
                       <div className="col-6 d-flex align-items-start legend-item">
                         <span className="me-2">{num2}</span>
                         <span>{text2}</span>
@@ -59,12 +57,12 @@ function MasterPlan() {
                     </div>
                   ))}
                 </div>
+
               </div>
               <div className="download-button-containers  mt-4">
-                <button className=" download-button-larger below">Download Brochure</button>
+                <button className=" download-button-larger">Download Brochure</button>
               </div>
             </div>
-
           </div>
         </div>
       </div>

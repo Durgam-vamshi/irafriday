@@ -6,6 +6,8 @@
   background-color: var(--amenitiesbg);
   padding: 60px 0;
   color: #fff;
+  padding-top:2%;
+  padding-bottom:2%;
 }
 
 .amenities-left {
@@ -46,6 +48,7 @@
   color: #eee;
   text-align: start;
   padding-top: 1rem;
+
 }
 
 .category-title {
@@ -113,12 +116,13 @@
 }
 
 .swiper-pagination-bullets {
+  position: relative;
+  margin-top: 1%;
+  padding-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
-  margin-top: 20px;
-  bottom: 1px !important;
 }
 
 .swiper-pagination-bullet {
@@ -147,6 +151,7 @@
 
   .amenities-heading {
     font-size: 18px;
+    font-size:24px;
     max-width: 100%;
   }
 
@@ -157,12 +162,15 @@
   }
 
   .category-title {
-    font-size: 12px;
+    font-size:18px;
+    padding-top:0;
+    margin-top:0;
     font-family: 'Nunito Sans', sans-serif;
   }
 
   .category-list {
     font-size: 11px;
+    font-size:14px;
   }
 }
 
@@ -196,3 +204,5 @@
     padding-right: 3rem;
   }
 }
+
+

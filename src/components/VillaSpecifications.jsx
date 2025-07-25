@@ -17,6 +17,14 @@ function VillaSpecifications() {
               <span className="title-line villa-title-sub">with Intention</span>
             </h2>
 
+
+            {/* mobile view */}
+            <h2 className="villa-title mobile view">
+              <span>
+
+              </span>
+            </h2>
+
             <p className="villa-desc">
               Searching for 4 BHK villas for sale in Hyderabad that feel
               spacious and soulful? Look no further.

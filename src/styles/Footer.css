@@ -15,7 +15,7 @@
 }
 
 .footer-logo {
-  width: 120px;
+  width: 100px;
   height: auto;
 }
 
@@ -138,7 +138,7 @@ h5 {
 }
 
 .footer-disclaimer {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
   font-weight: 300;
 }
@@ -189,16 +189,13 @@ h5 {
   }
 }
 
-
 .footer-left {
   display: flex;
 }
 
-
 .links-mobile {
   display: none;
 }
-
 
 @media ((max-width: 550px)and (max-width:770px)) {
   .footer-cta {
@@ -210,6 +207,17 @@ h5 {
 
     button {
       width: 138px;
+      height: 28px;
+      border-radius: 7px;
+    }
+
+    .sales-btn {
+      font-size: 0.75rem;
+      padding-top: 10px !important;
+    }
+
+    .footer-salesheading {
+      font-size: 10px;
     }
   }
 
@@ -226,8 +234,8 @@ h5 {
       li {
         border-right: 1px solid #bdbdbd;
         padding-right: 10px;
-
-        font-size: 14px;
+        font-size: 9px;
+        margin-top: 10px;
         font-weight: 300;
         outline: none;
 
@@ -284,10 +292,12 @@ h5 {
     img {
       height: 24px;
     }
+
     .ira-Img {
       margin-top: 60%;
       margin-bottom: 0;
     }
+
     .ira-Img2 {
       height: 7%;
     }
@@ -297,4 +307,28 @@ h5 {
 .footer-top-right,
 hr {
   display: none;
+}
+
+
+@media (max-width:550px) {
+
+  .footer{
+    padding-top:6%;
+    padding-bottom: 0;
+  }
+  .footer-address {
+    font-size: 9px !important;
+  }
+
+  .phone-container {
+    font-size: 9px;
+  }
+
+  .email-container {
+    font-size: 9px;
+  }
+
+  .socialMedia-container {
+    font-size: 9px;
+  }
 }

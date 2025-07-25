@@ -194,12 +194,8 @@
     max-width: 100%;
     overflow-x: hidden;
   }
-
-  
-
-
-
 }
+
 
 .mobile-title {
   display: none;
@@ -246,6 +242,7 @@
     font-size: 2.3vw;
     padding-bottom: 0;
     margin-bottom: 0;
+
   }
 
 
@@ -259,5 +256,26 @@
 
   .location-points li {
     font-size: 13px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .location-points {
+    line-height: 1.4rem !important;
+    /* Reduced line height */
+  }
+
+  .location-points li {
+    line-height: 1.4rem !important;
+    /* Also ensures list items shrink */
+  }
+
+  .time,
+  .companies {
+    line-height: 1.2rem !important;
+    /* Tighter spacing for text inside li */
   }
 }

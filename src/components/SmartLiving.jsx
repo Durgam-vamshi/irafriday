@@ -1,7 +1,6 @@
 import React from 'react';
 import "../styles/SmartLiving.css"
 
-
 const fanIcon = "https://urbanranch.irarealty.in/_next/static/media/fan.6aac0760.png";
 const smartLockIcon = "https://urbanranch.irarealty.in/_next/static/media/smartlock.e2618a50.png"
 const voiceAssistantIcon = "https://urbanranch.irarealty.in/_next/static/media/voice_assistant.7ed72c06.png";
@@ -13,12 +12,14 @@ const SmartLiving = () => {
     return (
         <div className="py-4 bg-white" id="smart-living">
             <div className="container smartLiving-container">
-                <div className = "smartLiving">
+                <div className="smartLiving">
                     <h5 className="Heading">Smart Living, Without Lifting A Finger</h5>
                     <p className="smartliving_p">
-                        Your villa at IRA Urban Ranch comes fully pre-fitted with complete home automation -
+                        Your villa at <span className='BolderSmart'>IRA Urban Ranch comes </span>fully pre-fitted with <span className='BolderSmart'>complete home automation</span> -
                         <br className="hidden md:block" />designed to make everyday life smoother, safer, and more intuitive for your family.
                     </p>
+
+
                     <div className="flex-col-lg-row">
                         <div className="w-full-lg-5-12">
                             <div className="grid-cols-2-lg-1">
@@ -33,7 +34,6 @@ const SmartLiving = () => {
                                         App-Controlled Lighting <br /> &amp; Fan Automation
                                     </p>
                                 </div>
-
                                 <div className="smartliving_icon_container">
                                     <div>
                                         <div className="smartliving_icon">
@@ -44,8 +44,6 @@ const SmartLiving = () => {
                                         Smart Door Locks <br /> &amp; Entry Alerts
                                     </p>
                                 </div>
-
-
                                 <div className="smartliving_icon_container">
                                     <div>
                                         <div className="smartliving_icon">
@@ -56,8 +54,6 @@ const SmartLiving = () => {
                                         Voice Assistant Compatibility <br /> (Alexa/Google)
                                     </p>
                                 </div>
-
-
                                 <div className="smartliving_icon_container">
                                     <div>
                                         <div className="smartliving_icon">
@@ -68,8 +64,6 @@ const SmartLiving = () => {
                                         Remote-Access for <br /> Appliances &amp; Devices
                                     </p>
                                 </div>
-
-
                                 <div className="smartliving_icon_container">
                                     <div>
                                         <div className="smartliving_icon">
@@ -83,6 +77,7 @@ const SmartLiving = () => {
 
                             </div>
                         </div>
+
                         <div className="w-full-lg-7-12">
                             <img
                                 alt="Smart Living"
@@ -100,5 +95,6 @@ const SmartLiving = () => {
         </div>
     );
 };
+
 
 export default SmartLiving;
